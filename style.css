@@ -1,0 +1,66 @@
+@charset: "utf-8";
+/*simple reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+
+/*tool*/
+.fl {
+	float:left;
+}
+.fr {
+	float: right;
+}
+.cf {
+	zoom:1;
+	overflow: hidden;
+}
+.cl {
+	zoom:1;
+}
+.cl:after {
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+/**/
+body {
+	background: #f0f1f4 url(http://image.baidu.com/static/list/special/page/img/list_bg_44e51255.jpg) repeat;
+}
+.search-wrap {
+	padding-top: 20px;
+	padding-left: 15px;
+}
+.search-wrap input {
+	height: 20px;
+	padding: 3px 5px;
+ 	outline: none;
+}
+
+#container {
+	padding: 15px;
+}
+#container .column {
+	float: left;
+	margin-right: 10px;
+}
+#container .column .img-item {
+	display: none;
+	margin-bottom: 10px;
+	padding: 5px;
+	box-shadow: 0 1px 3px #bbb;
+	-webkit-box-shadow: 0 1px 3px #bbb;
+	-moz-box-shadow: 0 1px 3px #bbb;
+}
+#container .column .des {
+	padding: 5px;
+	font-size: 12px;
+	color: #696969;
+}
