@@ -17,7 +17,7 @@ $(function() {
 			throttled = _.throttle(_.bind(function() {
 				if(this.getValue() =='') {
 					$(css.container).empty();
-					window.Fall.namespace.init();
+					window.Waterfall.namespace.init();
 					return;
 				}
 				this.sendKey(this.getValue());

@@ -7,8 +7,8 @@ $(function() {
 			url: 'fall.php'
 		};
 		
-	var fall = new Fall(options);
-	window.Fall.namespace = fall;
+	var fall = new Waterfall(options);
+	window.Waterfall.namespace = fall;
 	//======================================================
 	var search = new Search({
 		node: $(".search-wrap input"),

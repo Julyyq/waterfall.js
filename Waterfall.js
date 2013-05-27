@@ -1,6 +1,6 @@
 $(function() {
 	var tempArray = [];
-	var Fall = function(options) {
+	var Waterfall = function(options) {
 		this.node = options.node;
 		this.url = options.url;
 		this.maxColumn = options.maxColumn || 1;
@@ -18,7 +18,7 @@ $(function() {
 			}
 		},this));
 	}
-	Fall.prototype = {
+	Waterfall.prototype = {
 		isMobile: function() {
 			var o = navigator.userAgent.toLowerCase();
 			if(o.indexOf("ipod") || o.indexOf("iphone") || o.indexOf("ipad") || o.indexOf("android")) {
@@ -80,5 +80,5 @@ $(function() {
 			this.getData();
 		}
 	}
-	window.Fall = Fall;
+	window.Waterfall = Waterfall;
 });
