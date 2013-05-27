@@ -16,16 +16,8 @@ $(function() {
 			var ie = !-[1,],
 			throttled = _.throttle(_.bind(function() {
 				if(this.getValue() =='') {
-					/*$(css.container).empty();
-					var itemWidth = 240,
-						$node = $("#container"),
-					    options = {
-							node: $node,
-							maxColumn: Math.floor($node.width() / itemWidth),
-							url: 'fall.php'
-						};
-						
-					new Fall(options);*/
+					$(css.container).empty();
+					window.Fall.namespace.init();
 					return;
 				}
 				this.sendKey(this.getValue());

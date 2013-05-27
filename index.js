@@ -8,6 +8,7 @@ $(function() {
 		};
 		
 	var fall = new Fall(options);
+	window.Fall.namespace = fall;
 	//======================================================
 	var search = new Search({
 		node: $(".search-wrap input"),
