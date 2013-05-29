@@ -59,6 +59,9 @@ body {
 	-webkit-box-shadow: 0 1px 3px #bbb;
 	-moz-box-shadow: 0 1px 3px #bbb;
 }
+#container .column .img-item img {
+	border: none;
+}
 #container .column .des {
 	padding: 5px;
 	font-size: 12px;
